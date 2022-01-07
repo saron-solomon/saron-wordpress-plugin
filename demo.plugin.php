@@ -1,14 +1,12 @@
 <?php
 
 /**
-* Plugin Name: Demo Plugin 
-* Plugin URI: http://demoplugin.com
-* Description: This is a demo plugin developed forlearning purpose 
-* Version: 1.0.0
-* Author: saron solomon.
-* Author URI: http://saron.com
-* License: GPL2
+* Plugin Name: saron wordpress Plugin 
+* Plugin URI: http://saronplugin.com
+* Description: This is a demo plugin developed assignment purpose 
 */
+// Remove the admin bar from the front end
+add_filter( 'show_admin_bar', '__return_false' );
 
 
 
