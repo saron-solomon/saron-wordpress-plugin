@@ -1,8 +1,8 @@
 <?php
 
 /**
-* Plugin Name: saron wordpress Plugin 
-* Plugin URI: http://saronplugin.com
+* Plugin Name: saronwordpressPlugin 
+* Plugin URI: http://saronwordpressplugin.com
 * Description: This is a demo plugin developed assignment purpose 
 */
 // Remove the admin bar from the front end
