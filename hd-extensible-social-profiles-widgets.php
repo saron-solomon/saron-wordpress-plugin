@@ -123,7 +123,7 @@ function hd_espw_register_social_customizer_settings( $wp_customize ) {
 			);
 
 			// add the customizer control for this profile.
-			$wp_customize->add_control(
+		  $wp_customize->add_control(
 				$social_profile['id'],
 				array(
 					'type'        => $social_profile['type'],
