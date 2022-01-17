@@ -9,6 +9,14 @@ Text domain: hd-extensible-social-profiles-widget
 
 */
 
+/* exist if directly accessed */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+// define variable for path to this plugin file.
+define( 'HD_ESPW_LOCATION', dirname( __FILE__ ) );
+define( 'HD_ESPW_LOCATION_URL', plugins_url( '', __FILE__ ) );
 
 /**
  * Get the registered social profiles.
