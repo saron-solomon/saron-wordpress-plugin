@@ -2,9 +2,8 @@
 /*
 Plugin Name: HD Extensible Social Profiles Widget
 Plugin URI: https://github.com/saron-solomon
-Description: this is emplimented for assignment .
+Description: this is emplimented for plugin assignment .
 Version: 1.0
-License: GPL-2.0+
 Author: Saron Solomon
 Author URI: https://github.com/saron-solomon/
 Text domain: hd-extensible-social-profiles-widget
@@ -194,8 +193,7 @@ class HD_ESPW_Social_Icons_Widget extends WP_Widget {
 		 * @hooked hd_espw_social_icons_output_widget_title.- 10
 		 * @hooked hd_espw_output_social_icons_widget_content - 20
 		 */
-		do_action( 'hd_espw_social_icons_widget_output', $args, $instance );
-
+	
 		// output the after widget content.
 		echo wp_kses_post( $args['after_widget'] );
 
