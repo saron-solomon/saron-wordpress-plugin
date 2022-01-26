@@ -141,15 +141,6 @@ function hd_espw_register_social_customizer_settings( $wp_customize ) {
 add_action( 'customize_register', 'hd_espw_register_social_customizer_settings' );
 
 /**
- * Register the social icons widget with WordPress.
- */
-function hd_espw_register_social_icons_widget() {
-	register_widget( 'HD_ESPW_Social_Icons_Widget' );
-}
-
-add_action( 'widgets_init', 'hd_espw_register_social_icons_widget' );
-
-/**
  * Extend the widgets class for our new social icons widget.
  */
 class HD_ESPW_Social_Icons_Widget extends WP_Widget {
