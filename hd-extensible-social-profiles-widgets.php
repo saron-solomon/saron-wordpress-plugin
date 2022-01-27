@@ -304,23 +304,7 @@ function hd_espw_output_social_icons_widget_content( $args, $instance ) {
 		<ul class="hd-espw-social-icons">
 		<?php
 
-		// loop through each profile.
-		foreach ( $social_profiles as $social_profile ) {
-
-			// get the value for this social profile - the profile url.
-			$profile_url = get_theme_mod( $social_profile['id'] );
-
-			// if we have a no value - url.
-			if ( empty( $profile_url ) ) {
-				continue; // continue to the next social profile.
-			}
-
-			// if we don't have a specified class.
-			if ( empty ( $social_profile['class'] ) ) {
-
-				// use the label for form a class.
-				$social_profile['class'] = strtolower( sanitize_title_with_dashes( $social_profile['label'] ) );
-
+		
 			}
 
 			// build the markup for this social profile.
