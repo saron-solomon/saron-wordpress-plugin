@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: HD Extensible Social Profiles Widget
+Plugin Name: Saron Extensible Social Profiles Widget
 Plugin URI: https://github.com/saron-solomon
-Description: this is emplimented for plugin assignment .
+Description: this is emplimented for plugin assignment.
 Author: Saron Solomon
 Author URI: https://github.com/saron-solomon/
-Text domain: hd-extensible-social-profiles-widget
+Text domain: saron-extensible-social-profiles-widget
 
 */
 
@@ -141,6 +141,15 @@ function hd_espw_register_social_customizer_settings( $wp_customize ) {
 add_action( 'customize_register', 'hd_espw_register_social_customizer_settings' );
 
 /**
+ * Register the social icons widget with WordPress.
+ */
+function hd_espw_register_social_icons_widget() {
+	register_widget( 'HD_ESPW_Social_Icons_Widget' );
+}
+
+add_action( 'widgets_init', 'hd_espw_register_social_icons_widget' );
+
+/**
  * Extend the widgets class for our new social icons widget.
  */
 class HD_ESPW_Social_Icons_Widget extends WP_Widget {
@@ -219,26 +228,7 @@ class HD_ESPW_Social_Icons_Widget extends WP_Widget {
 
 	}
 
-	/**
-	 * Controls the save function when the widget updates.
-	 *
-	 * @param  array $new_instance The newly saved widget instance.
-	 * @param  array $old_instance The old widget instance.
-	 * @return array               The new instance to update.
-	 */
-	public function update( $new_instance, $old_instance ) {
-
-		// create an empty array to store new values in.
-		$instance = array();
-
-		// add the title to the array, stripping empty tags along the way.
-		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-
-		// return the instance array to be saved.
-		return $instance;
-
-	}
-
+	
 }
 
 /**
