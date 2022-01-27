@@ -2,7 +2,7 @@
 /*
 Plugin Name: Saron Extensible Social Profiles Widget
 Plugin URI: https://github.com/saron-solomon
-Description: this is emplimented for plugin assignment.
+Description: this is emplimented for plugin assignment .
 Author: Saron Solomon
 Author URI: https://github.com/saron-solomon/
 Text domain: saron-extensible-social-profiles-widget
