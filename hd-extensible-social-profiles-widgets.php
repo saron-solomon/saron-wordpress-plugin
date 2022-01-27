@@ -228,7 +228,26 @@ class HD_ESPW_Social_Icons_Widget extends WP_Widget {
 
 	}
 
-	
+	/**
+	 * Controls the save function when the widget updates.
+	 *
+	 * @param  array $new_instance The newly saved widget instance.
+	 * @param  array $old_instance The old widget instance.
+	 * @return array               The new instance to update.
+	 */
+	public function update( $new_instance, $old_instance ) {
+
+		// create an empty array to store new values in.
+		$instance = array();
+
+		// add the title to the array, stripping empty tags along the way.
+		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+
+		// return the instance array to be saved.
+		return $instance;
+
+	}
+
 }
 
 /**
